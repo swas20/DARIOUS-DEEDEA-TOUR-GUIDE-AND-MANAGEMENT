@@ -64,3 +64,30 @@ dots.forEach((dot,index)=>{
     });
 
 });
+function searchDestination(){
+
+    let search = document.getElementById("searchInput").value.toLowerCase();
+
+    if(search.includes("diani")){
+        window.location.href="diani.html";
+    }
+    else if(search.includes("watamu")){
+        window.location.href="watamu.html";
+    }
+    else if(search.includes("malindi")){
+        window.location.href="malindi.html";
+    }
+    else if(search.includes("lamu")){
+        window.location.href="lamu.html";
+    }
+    else if(search.includes("bamburi")){
+        window.location.href="bamburi.html";
+    }
+    else if(search.includes("coastal")){
+        window.location.href="coastal.html";
+    }
+    else{
+        alert("Destination not found.");
+    }
+
+}
