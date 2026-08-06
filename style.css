@@ -920,3 +920,76 @@ nav{
     width: 100%;
     z-index: 1000;
 }
+/* Arrange everything vertically */
+
+.logo{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+}
+
+nav{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+    margin-top:20px;
+}
+
+.search-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+    margin:20px 0;
+}
+
+.search-box form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.cards{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.gallery-grid{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    align-items:center;
+}
+
+.advertisement-grid{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.footer-container{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+    text-align:center;
+}
+
+.container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.card,
+.advertisement-card{
+    width:90%;
+    max-width:600px;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
