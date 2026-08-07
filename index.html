@@ -2,44 +2,68 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>DARIUS DEEDEA TOUR GUIDE</title>
+
+    <title>DARIUS DEEDEA TOUR GUIDE KENYA</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-    <!-- ================= NAVIGATION ================= -->
-<div class="logo">
+<!-- ==========================
+     NAVIGATION
+=========================== -->
 
-    <a href="index.html">
-        <img src="images/logo.png" alt="DARIUS DEEDEA TOUR GUIDE">
-    </a>
+<nav class="navbar">
 
-    <div class="logo-text">
-        <h2>DARIUS DEEDEA</h2>
-        <p>TOUR GUIDE KENYA</p>
+    <div class="logo">
+
+        <a href="index.html">
+
+            <img src="images/logo.png" alt="Darius Dedea Tour Guide">
+
+        </a>
+
+        <div class="logo-text">
+
+            <h2>DARIUS DEEDEA</h2>
+
+            <p>TOUR GUIDE KENYA</p>
+
+        </div>
+
     </div>
 
-<nav>
-    <a href="#home">Home</a>
-    <a href="#destinations">Destinations</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-    <a href="#booking">Booking</a>
+    <ul class="nav-links">
+
+        <li><a href="#home">Home</a></li>
+
+        <li><a href="#featured">Tours</a></li>
+
+        <li><a href="#about">About</a></li>
+
+        <li><a href="#why">Why Us</a></li>
+
+        <li><a href="#destinations">Destinations</a></li>
+
+        <li><a href="#gallery">Gallery</a></li>
+
+        <li><a href="#contact">Contact</a></li>
+
+    </ul>
+
 </nav>
 
-    <div class="search-container">
-    <input type="text" id="searchInput" placeholder="Search destinations...">
-    <button onclick="searchDestination()">🔍 Search</button>
-</div>
+<!-- ==========================
+     HERO SECTION
+=========================== -->
 
-
- <!-- ================= HERO SLIDER ================= -->
-<section class="hero">
+<section class="hero" id="home">
 
     <div class="slider">
 
@@ -52,68 +76,88 @@
         <img src="images/slide4.jpg" class="slide">
 
         <img src="images/slide5.jpg" class="slide">
-<img src="images/slide6.jpg" class="slide">
-<img src="images/slide7.jpg" class="slide">
-<img src="images/slide8.jpg" class="slide">
-<img src="images/slide9.jpg" class="slide">
-<img src="images/slide10.jpg" class="slide">
+        <img src="images/slide6.jpg" class="slide">
+        <img src="images/slide7.jpg" class="slide">
+        <img src="images/slide8.jpg" class="slide">
+
     </div>
 
     <div class="hero-content">
 
         <h1>DARIUS DEEDEA TOUR GUIDE</h1>
 
-        <p>Explore Kenya's Best Tourist Destinations</p>
+        <p>
+            Explore Kenya's breathtaking beaches,
+            wildlife, mountains, culture and cities.
+        </p>
 
-        <a href="booking.html" class="btn">Book Your Tour</a>
+        <a href="booking.html" class="btn">
+
+            Book Your Tour
+
+        </a>
 
     </div>
-
-</section>
 
     <button class="prev">&#10094;</button>
+
     <button class="next">&#10095;</button>
-<a href="booking.html" class="btn">Book Your Tour</a>
-    <div class="dots">
-        <span class="dot active"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-    </div>
 
 </section>
+
+<!-- ==========================
+     SEARCH TOUR
+=========================== -->
 
 <section class="search-tour">
 
-    <div class="search-box">
+    <div class="container">
 
-        <h2>Find Your Perfect Tour</h2>
+        <div class="search-box">
 
-        <form>
+            <h2>Find Your Perfect Tour</h2>
 
-            <input type="text" placeholder="Destination">
+            <form>
 
-            <input type="date">
+                <input type="text"
+                       placeholder="Destination">
 
-            <select>
-                <option>Number of People</option>
-                <option>1 Person</option>
-                <option>2 People</option>
-                <option>3 People</option>
-                <option>4 People</option>
-                <option>5+ People</option>
-            </select>
+                <input type="date">
 
-            <button type="submit">Search Tour</button>
+                <select>
 
-        </form>
+                    <option>Number of People</option>
+
+                    <option>1 Person</option>
+
+                    <option>2 People</option>
+
+                    <option>3 People</option>
+
+                    <option>4 People</option>
+
+                    <option>5+ People</option>
+
+                </select>
+
+                <button type="submit">
+
+                    Search Tour
+
+                </button>
+
+            </form>
+
+        </div>
 
     </div>
 
 </section>
+<!-- ==========================
+     FEATURED TOURS
+========================== -->
 
-<section class="featured-tours">
+<section class="featured-tours" id="featured">
 
     <div class="container">
 
@@ -121,45 +165,66 @@
 
         <div class="cards">
 
+            <!-- Tour 1 -->
+
             <div class="card">
 
                 <img src="images/yacht.jpg" alt="Luxury Yacht">
 
                 <h3>Luxury Yacht Experience</h3>
 
-                <p>Enjoy a luxury yacht cruise with free photography.</p>
+                <p>
+                    Enjoy a luxury yacht cruise along the Kenyan Coast with
+                    professional photography and unforgettable ocean views.
+                </p>
 
-                <h4>KSh 1,200 / Hour</h4>
+                <h4>as from KSh 1,200 / Hour</h4>
 
-                <a href="booking.html" class="btn">Book Now</a>
+                <a href="booking.html" class="btn">
+                    Book Now
+                </a>
 
             </div>
 
+            <!-- Tour 2 -->
+
             <div class="card">
 
-                <img src="images/airbnb.jpg" alt="Airbnb">
+                <img src="images/airbnb.jpg" alt="Luxury Airbnb">
 
                 <h3>Luxury Airbnb</h3>
 
-                <p>3-bedroom accommodation for up to 10 guests.</p>
+                <p>
+                    Relax in our modern 3-bedroom Airbnb that accommodates
+                    families, groups and business travellers.
+                </p>
 
                 <h4>KSh 8,000 / Night</h4>
 
-                <a href="booking.html" class="btn">Book Now</a>
+                <a href="booking.html" class="btn">
+                    Book Now
+                </a>
 
             </div>
 
+            <!-- Tour 3 -->
+
             <div class="card">
 
-                <img src="images/safari.jpg" alt="Safari">
+                <img src="images/safari.jpg" alt="Safari Adventure">
 
                 <h3>Safari Adventure</h3>
 
-                <p>Visit Kenya's famous wildlife parks with experienced guides.</p>
+                <p>
+                    Experience Kenya's famous wildlife parks with professional
+                    tour guides and comfortable transport.
+                </p>
 
                 <h4>From KSh 5,000</h4>
 
-                <a href="booking.html" class="btn">Book Now</a>
+                <a href="booking.html" class="btn">
+                    Book Now
+                </a>
 
             </div>
 
@@ -168,125 +233,183 @@
     </div>
 
 </section>
+<!-- ==========================
+     ABOUT US
+========================== -->
 
-    <!-- ================= ABOUT ================= -->
+<section class="about" id="about">
 
-    <section class="about">
+    <div class="container">
 
-        <div class="container">
+        <h2>About Us</h2>
 
-            <h2>About Us</h2>
+        <p>
+            DARIUS DEEDEA TOUR GUIDE KENYA is dedicated to providing unforgettable
+            travel experiences across Kenya. We specialize in guided tours to
+            breathtaking beaches, wildlife parks, mountains, historical sites,
+            cultural villages, and vibrant cities. Our experienced guides ensure
+            every journey is safe, enjoyable, and memorable.
+        </p>
 
-            <p>
+    </div>
 
-                Darius Dedea Tour Guide Kenya is committed to providing
-                unforgettable travel experiences across Kenya.
-                Explore beautiful beaches, wildlife parks,
-                mountains, historical sites and vibrant cities
-                with experienced local guides.
+</section>
 
-            </p>
+<!-- ==========================
+     WHY CHOOSE US
+========================== -->
+
+<section class="why" id="why">
+
+    <div class="container">
+
+        <h2>Why Choose Us</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>🛡 Safe & Secure</h3>
+                <p>
+                    Your safety is our highest priority on every trip.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>💰 Affordable Prices</h3>
+                <p>
+                    Quality tours at competitive prices with no hidden charges.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🌍 Professional Guides</h3>
+                <p>
+                    Friendly, experienced, and knowledgeable local tour guides.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>⭐ Excellent Experience</h3>
+                <p>
+                    We create unforgettable adventures and lifelong memories.
+                </p>
+            </div>
 
         </div>
 
-    </section>
+    </div>
 
-    <!-- ================= WHY US ================= -->
+</section>
 
-    <section class="why">
+<!-- ==========================
+     DESTINATIONS
+========================== -->
 
-        <div class="container">
+<section class="destinations" id="destinations">
 
-            <h2>Why Choose Us</h2>
+    <div class="container">
 
-            <div class="cards">
+        <h2>Explore Our Destinations</h2>
 
-                <div class="card">
-                    <h3>🛡 Safe Tours</h3>
-                    <p>Your safety is our first priority.</p>
-                </div>
+        <div class="cards">
 
-                <div class="card">
-                    <h3>💰 Affordable Prices</h3>
-                    <p>Quality tours at affordable prices.</p>
-                </div>
+            <div class="card">
 
-                <div class="card">
-                    <h3>🌍 Professional Guides</h3>
-                    <p>Friendly and experienced local guides.</p>
-                </div>
+                <h3>🌊 Coastal Destinations</h3>
 
-                <div class="card">
-                    <h3>⭐ Best Experience</h3>
-                    <p>Create memories you'll never forget.</p>
-                </div>
+                <p>
+                    Discover beautiful beaches, marine parks,
+                    and exciting water adventures.
+                </p>
+
+                <a href="coastal.html" class="btn">
+                    Explore
+                </a>
+
+            </div>
+
+            <div class="card">
+
+                <h3>🦁 Wildlife Destinations</h3>
+
+                <p>
+                    Visit Kenya's famous national parks
+                    and experience incredible wildlife.
+                </p>
+
+                <a href="wildlife.html" class="btn">
+                    Explore
+                </a>
+
+            </div>
+
+            <div class="card">
+
+                <h3>🏔 Mountain Destinations</h3>
+
+                <p>
+                    Experience breathtaking mountain scenery,
+                    hiking trails, and cool climates.
+                </p>
+
+                <a href="mountains.html" class="btn">
+                    Explore
+                </a>
+
+            </div>
+
+            <div class="card">
+
+                <h3>🏛 Cultural Destinations</h3>
+
+                <p>
+                    Learn about Kenya's rich traditions,
+                    heritage, and diverse communities.
+                </p>
+
+                <a href="cultural.html" class="btn">
+                    Explore
+                </a>
+
+            </div>
+
+            <div class="card">
+
+                <h3>🏙 Urban Destinations</h3>
+
+                <p>
+                    Explore Kenya's modern cities,
+                    shopping centres, nightlife,
+                    and entertainment.
+                </p>
+
+                <a href="urban.html" class="btn">
+                    Explore
+                </a>
 
             </div>
 
         </div>
 
-    </section>
+    </div>
 
-    <!-- ================= DESTINATIONS ================= -->
+</section>
+<!-- ==========================
+     SPECIAL OFFERS & ADVERTISEMENT
+========================== -->
 
-    <section class="destinations">
-
-        <div class="container">
-
-            <h2>Explore Destinations</h2>
-
-            <div class="cards">
-
-                <div class="card">
-                    <h3>🌊 Coastal Destinations</h3>
-                    <p>Beautiful beaches and marine adventures.</p>
-                    <a href="coastal.html" class="btn">Explore</a>
-                </div>
-
-                <div class="card">
-                    <h3>🦁 Wildlife Destinations</h3>
-                    <p>Discover Kenya's amazing wildlife.</p>
-                    <a href="wildlife.html" class="btn">Explore</a>
-                </div>
-
-                <div class="card">
-                    <h3>🏔 Mountain Destinations</h3>
-                    <p>Experience Kenya's scenic mountains.</p>
-                    <a href="mountains.html" class="btn">Explore</a>
-                </div>
-
-                <div class="card">
-                    <h3>🏛 Cultural Destinations</h3>
-                    <p>Discover Kenya's rich cultural heritage.</p>
-                    <a href="cultural.html" class="btn">Explore</a>
-                </div>
-
-                <div class="card">
-                    <h3>🏙 Urban Destinations</h3>
-                    <p>Visit Kenya's exciting cities.</p>
-                    <a href="urban.html" class="btn">Explore</a>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-    <!-- ================= ADVERTISEMENT ================= -->
-
-<section class="advertisement">
+<section class="advertisement" id="offers">
 
     <div class="container">
 
         <h2>🔥 Special Offers & Advertisements</h2>
 
         <p class="advertisement-text">
-            Don't miss our exclusive travel deals and unforgettable experiences.
+            Don't miss our exclusive travel packages and unforgettable experiences.
         </p>
 
         <div class="advertisement-grid">
 
-            <!-- Advertisement 1 -->
             <div class="advertisement-card">
 
                 <img src="images/yacht.jpg" alt="Luxury Yacht">
@@ -294,16 +417,16 @@
                 <h3>🛥 Luxury Yacht Ride</h3>
 
                 <p>
-                    Enjoy a luxury yacht ride along the Kenyan coast.
+                    Enjoy a luxury yacht cruise along the Kenyan Coast with
+                    breathtaking ocean views.
                 </p>
 
-                <h4>KSh 1,200 per hour</h4>
+                <h4>KSh 1,200 per Hour</h4>
 
                 <a href="booking.html" class="btn">Book Now</a>
 
             </div>
 
-            <!-- Advertisement 2 -->
             <div class="advertisement-card">
 
                 <img src="images/airbnb.jpg" alt="Luxury Airbnb">
@@ -311,17 +434,16 @@
                 <h3>🏠 Luxury Airbnb</h3>
 
                 <p>
-                    3-bedroom accommodation for up to 10 guests.
+                    Stay in a fully furnished luxury Airbnb suitable for
+                    families and groups.
                 </p>
 
-                <h4>KSh 8,000 per night</h4>
+                <h4>KSh 8,000 per Night</h4>
 
                 <a href="booking.html" class="btn">Book Now</a>
 
             </div>
-            
 
-            <!-- Advertisement 3 -->
             <div class="advertisement-card">
 
                 <img src="images/nightlife.jpg" alt="Nightlife">
@@ -329,7 +451,8 @@
                 <h3>🌃 Nightlife Experience</h3>
 
                 <p>
-                    Enjoy Kenya's best clubs, music, and entertainment.
+                    Experience Kenya's exciting nightlife, clubs,
+                    restaurants and entertainment.
                 </p>
 
                 <h4>Book Your Experience</h4>
@@ -344,65 +467,63 @@
 
 </section>
 
-    <!-- ================= GALLERY ================= -->
+<!-- ==========================
+     GALLERY
+========================== -->
 
-    <<section class="gallery">
-
-<div class="container">
-
-<h2>Gallery</h2>
-
- <p>Explore Kenya through photos and videos.</p>
-
-<div class="gallery-grid">
-
-     <!-- Images -->
-
-<img src="images/gallery1.jpg">
-
-<img src="images/gallery2.jpg">
-
-<img src="images/gallery3.jpg">
-
-<img src="images/gallery4.jpg">
-
-<img src="images/gallery5.jpg">
-
-<img src="images/gallery7.jpg">
-
-<img src="images/gallery8.jpg">
-
-<img src="images/gallery9.jpg">
-
-<img src="images/gallery10.jpg">
-<img src="images/gallery11.jpg">
-<img src="images/gallery12.jpg">
-<img src="images/gallery13.jpg">
-<img src="images/gallery14.jpg">
-<img src="images/gallery15.jpg">
-<img src="images/gallery16.jpg">
-<img src="images/gallery17.jpg">
-<img src="images/gallery18.jpg">
-<img src="images/gallery6.jpg">
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= BOOK NOW ================= -->
-
-<section class="booking">
+<section class="gallery" id="gallery">
 
     <div class="container">
 
-        <h2>Ready for Your Dream Adventure?</h2>
+        <h2>Photo & Video Gallery</h2>
 
-        <p>
-            Book your unforgettable tour today and discover the beauty of Kenya with
-            <strong>DARIUS DEEDEA TOUR GUIDE</strong>.
+        <p class="gallery-text">
+            Discover some of our unforgettable adventures.
         </p>
-<a href="booking.html" class="btn">Book Your Tour</a>
+
+        <div class="gallery-grid">
+
+            <img src="images/gallery1.jpg" alt="Gallery Image">
+
+            <img src="images/gallery2.jpg" alt="Gallery Image">
+
+            <img src="images/gallery3.jpg" alt="Gallery Image">
+
+            <img src="images/gallery4.jpg" alt="Gallery Image">
+
+            <video controls>
+                <source src="videos/video1.mp4" type="video/mp4">
+            </video>
+
+            <video controls>
+                <source src="videos/video2.mp4" type="video/mp4">
+            </video>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================
+     CONTACT
+========================== -->
+
+<section class="contact" id="contact">
+
+    <div class="container">
+
+        <h2>Contact Us</h2>
+
+        <p><strong>📞 Phone:</strong> 0757 258 218</p>
+
+        <p><strong>📧 Email:</strong> deedeadarius@gmail.com</p>
+
+        <p><strong>📍 Address:</strong> Mtwapa, Mombasa County, Kenya</p>
+
+        <br>
+
+        <a href="booking.html" class="btn">
             Book Your Tour Now
         </a>
 
@@ -410,42 +531,40 @@
 
 </section>
 
-   
-
-<!-- ================= FOOTER ================= -->
+<!-- ==========================
+     FOOTER
+========================== -->
 
 <footer class="footer">
 
     <div class="footer-container">
-
-        <!-- Company -->
 
         <div class="footer-section">
 
             <h3>DARIUS DEEDEA TOUR GUIDE</h3>
 
             <p>
-                Your trusted travel partner for unforgettable adventures across Kenya.
-                Discover beaches, wildlife, mountains, culture, and exciting cities.
+                Your trusted travel partner for unforgettable adventures
+                across Kenya.
             </p>
 
         </div>
-
-        <!-- Quick Links -->
 
         <div class="footer-section">
 
             <h3>Quick Links</h3>
 
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="destinations.html">Destinations</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="contact.html">Contact</a>
+            <a href="#home">Home</a>
+
+            <a href="#about">About</a>
+
+            <a href="#destinations">Destinations</a>
+
+            <a href="#gallery">Gallery</a>
+
+            <a href="#contact">Contact</a>
 
         </div>
-
-        <!-- Contact -->
 
         <div class="footer-section">
 
@@ -455,11 +574,9 @@
 
             <p>📧 deedeadarius@gmail.com</p>
 
-            <p>📍 Mtwapa, Mombasa County, Kenya</p>
+            <p>📍 Mtwapa, Kenya</p>
 
         </div>
-
-        <!-- Social -->
 
         <div class="footer-section">
 
@@ -469,26 +586,156 @@
 
             <p>📷 Instagram: @Dariusdeedea</p>
 
-            
-
         </div>
 
     </div>
 
     <div class="footer-bottom">
 
-        <p>
-            © 2026 DARIUS DEEDEA TOUR GUIDE. All Rights Reserved.
-        </p>
+        © 2026 DARIUS DEEDEA TOUR GUIDE. All Rights Reserved.
 
     </div>
 
 </footer>
+<!-- ==========================
+     JAVASCRIPT
+========================== -->
 
-<script src="script.js"></script>
+<script>
+
+// ======================
+// HERO IMAGE SLIDER
+// ======================
+
+const slides = document.querySelectorAll(".slide");
+
+const next = document.querySelector(".next");
+
+const prev = document.querySelector(".prev");
+
+let current = 0;
+
+function showSlide(index){
+
+    slides.forEach((slide)=>{
+        slide.classList.remove("active");
+    });
+
+    slides[index].classList.add("active");
+
+}
+
+function nextSlide(){
+
+    current++;
+
+    if(current >= slides.length){
+
+        current = 0;
+
+    }
+
+    showSlide(current);
+
+}
+
+function previousSlide(){
+
+    current--;
+
+    if(current < 0){
+
+        current = slides.length - 1;
+
+    }
+
+    showSlide(current);
+
+}
+
+if(next){
+    next.addEventListener("click", nextSlide);
+}
+
+if(prev){
+    prev.addEventListener("click", previousSlide);
+}
+
+// Automatic slideshow every 5 seconds
+
+setInterval(nextSlide,5000);
+
+
+// ======================
+// DESTINATION SEARCH
+// ======================
+
+function searchDestination(){
+
+    const input = document.getElementById("searchInput");
+
+    if(!input) return;
+
+    const value = input.value.toLowerCase().trim();
+
+    if(value===""){
+
+        alert("Please enter a destination.");
+
+        return;
+
+    }
+
+    if(value.includes("coast") ||
+       value.includes("diani") ||
+       value.includes("mombasa") ||
+       value.includes("watamu") ||
+       value.includes("malindi")){
+
+        window.location.href="coastal.html";
+
+    }
+
+    else if(value.includes("wild") ||
+            value.includes("maasai") ||
+            value.includes("amboseli") ||
+            value.includes("tsavo")){
+
+        window.location.href="wildlife.html";
+
+    }
+
+    else if(value.includes("mount") ||
+            value.includes("kenya") ||
+            value.includes("aberdare")){
+
+        window.location.href="mountains.html";
+
+    }
+
+    else if(value.includes("culture")){
+
+        window.location.href="cultural.html";
+
+    }
+
+    else if(value.includes("city") ||
+            value.includes("urban") ||
+            value.includes("nairobi")){
+
+        window.location.href="urban.html";
+
+    }
+
+    else{
+
+        alert("Destination not found.");
+
+    }
+
+}
+
+</script>
+
 </body>
-</html>
-
-</body>
-
 </html>
