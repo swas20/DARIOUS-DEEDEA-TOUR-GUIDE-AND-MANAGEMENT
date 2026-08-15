@@ -94,8 +94,8 @@ body{
 .hero{
     position:relative;
     width:100%;
-    height:calc(100vh - 80px);
-    margin-top:80px;
+    height:calc(100vh - 60px);
+    margin-top:60px;
     overflow:hidden;
     display:flex;
     justify-content:center;
@@ -310,7 +310,12 @@ section p{
 
 .card img{
     width:100%;
-    height:250px;
+    aspect-ratio:1 / 1;
+    height:auto;
+    object-fit:contain;
+    display:block;
+    background:#fff;
+}
     object-fit:contain;
 }
 .card h3{
@@ -419,8 +424,11 @@ section p{
 
 .advertisement-card img{
     width:100%;
-    height:220px;
+    aspect-ratio:1 / 1;
+    height:auto;
     object-fit:contain;
+    display:block;
+    background:#fff;
 }
 
 .advertisement-card h3{
@@ -459,10 +467,12 @@ section p{
 .gallery-grid img,
 .gallery-grid video{
     width:100%;
-    height:250px;
+    aspect-ratio:1 / 1;
+    height:auto;
     object-fit:contain;
     border-radius:12px;
     transition:.3s;
+    background:#fff;
 }
 .gallery-grid img:hover,
 .gallery-grid video:hover{
