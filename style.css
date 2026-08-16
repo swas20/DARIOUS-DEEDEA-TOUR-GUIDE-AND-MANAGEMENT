@@ -315,8 +315,32 @@ section p{
     object-fit:contain;
     display:block;
     background:#fff;
+    padding:5px;
 }
+.square-image{
+    position:relative;
+    width:100%;
+    aspect-ratio:1 / 1;
+    overflow:hidden;
+    background:#fff;
+}
+
+.square-image .image-bg{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    filter:blur(15px);
+    transform:scale(1.15);
+    opacity:.6;
+}
+
+.square-image .image-main{
+    position:absolute;
+    width:100%;
+    height:100%;
     object-fit:contain;
+    z-index:2;
 }
 .card h3{
     color:#00695c;
@@ -374,7 +398,6 @@ section p{
 .about,
 .why,
 .destinations,
-.advertisement,
 .gallery,
 .contact,
 .footer{
@@ -382,72 +405,7 @@ section p{
     width:100%;
     clear:both;
 }
-/* =====================================
-   ADVERTISEMENT
-===================================== */
 
-.advertisement{
-    background:#fff8e1;
-    padding:80px 20px;
-}
-
-.advertisement h2{
-    text-align:center;
-    color:#d35400;
-    margin-bottom:20px;
-}
-
-.advertisement-text{
-    text-align:center;
-    color:#555;
-    margin-bottom:40px;
-}
-
-.advertisement-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:30px;
-}
-
-.advertisement-card{
-    background:#fff;
-    border-radius:15px;
-    overflow:hidden;
-    text-align:center;
-    box-shadow:0 8px 20px rgba(0,0,0,.15);
-    transition:.3s;
-}
-
-.advertisement-card:hover{
-    transform:translateY(-8px);
-}
-
-.advertisement-card img{
-    width:100%;
-    aspect-ratio:1 / 1;
-    height:auto;
-    object-fit:contain;
-    display:block;
-    background:#fff;
-}
-
-.advertisement-card h3{
-    color:#00695c;
-    margin:20px 0;
-}
-
-.advertisement-card p{
-    padding:0 20px;
-}
-
-.advertisement-card h4{
-    color:#ff9800;
-    margin:15px 0;
-}
-
-.advertisement-card .btn{
-    margin:20px;
-}
 
 /* =====================================
    GALLERY
@@ -593,11 +551,10 @@ section p{
     }
 
     .cards,
-    .advertisement-grid,
-    .gallery-grid,
-    .footer-container{
-        grid-template-columns:1fr;
-    }
+.gallery-grid,
+.footer-container{
+    grid-template-columns:1fr;
+}
 
     .search-box form{
         flex-direction:column;
