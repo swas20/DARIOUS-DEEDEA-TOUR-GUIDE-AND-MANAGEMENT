@@ -398,6 +398,7 @@ section p{
 .about,
 .why,
 .destinations,
+.advertisement,
 .gallery,
 .contact,
 .footer{
@@ -551,10 +552,11 @@ section p{
     }
 
     .cards,
-.gallery-grid,
-.footer-container{
-    grid-template-columns:1fr;
-}
+    .advertisement-grid,
+    .gallery-grid,
+    .footer-container{
+        grid-template-columns:1fr;
+    }
 
     .search-box form{
         flex-direction:column;
